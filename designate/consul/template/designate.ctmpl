@@ -1,0 +1,14 @@
+[{{range $n := nodes}}
+{
+  "name" : "{{$n.Node}}",
+  "description" : "This is an example record set.",
+  "type" : "A",
+  "ttl" : 3600,
+  "records" : [
+      "{{$n.Address}}"
+  ]
+
+},
+{{end}}
+{}
+]
